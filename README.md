@@ -1,6 +1,16 @@
-# MeanBasics
+# Posts App using MEAN and AWS E3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+A Posts App using complete MEAN stack
+
+# Topics Covered
+1. JWT Authentication
+2. Image Uploading using multer
+3. Pagination
+4. AWS Services
+5. Code Formatting
+
+# App is deployed to AWS Elastic Beanstalk <br>
+<a href="http://meanpostsapp-env.eba-tbxfc5ix.us-west-2.elasticbeanstalk.com/">Here is the deployed version</a>
 
 ## Development server
 
