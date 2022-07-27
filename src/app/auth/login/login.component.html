@@ -1,0 +1,47 @@
+<mat-card>
+    <form
+    (ngSubmit)="onSignIn(login)"
+    #login="ngForm"
+    >
+        <mat-form-field>
+            <input 
+            matInput 
+            type="email"
+            name="email"
+            ngModel
+            placeholder="Enter email"
+            >
+            <!-- <mat-error 
+            *ngIf="form.controls['title'].invalid && form.controls['title'].touched">Please enter a post title</mat-error> -->
+        </mat-form-field>
+        <mat-form-field>
+            <input 
+            matInput 
+            type="password"
+            name="password"
+            ngModel
+            placeholder="Enter password"
+            >
+            <!-- <mat-error *ngIf="form.controls['content'].invalid && form.controls['content'].touched">Please enter a post content</mat-error> -->
+        </mat-form-field>
+        <button
+        *ngIf="!isLoading" 
+        mat-raised-button
+        type="submit"
+        color="primary">Login</button>
+
+        <mat-spinner
+        *ngIf="isLoading"
+        strokeWidth="8"
+        diameter="50"></mat-spinner>
+    </form>
+</mat-card>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Login Failed</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+      </div>
+      <div class="modal-body"><h3 style="color: red;">{{errorMessage}}</h3>
+      </div>
+</ng-template>

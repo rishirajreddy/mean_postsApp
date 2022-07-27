@@ -1,0 +1,26 @@
+:host {
+    display: block;
+    margin-top: 1rem;
+}
+mat-spinner {
+    margin: auto;
+}
+
+.post-image {
+    width: 100%;
+}
+.post-image img {
+    width: 100%;
+}
+
+.post-content-user {
+    display: flex;
+    justify-content: space-around;
+}
+mat-paginator {
+    margin-top: 1rem;
+}
+
+mat-expansion-panel-header {
+    font-weight: 500;
+}

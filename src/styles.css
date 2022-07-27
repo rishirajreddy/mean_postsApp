@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.post-saved {
+    background-color: green;
+    color: white;
+}
+
+.post-deleted {
+    background-color:red;
+    color: white;
+}
+
+.logout {
+    background-color: red;
+    color: white;
+}
+
+.auth {
+    background-color: #2860f0;
+    color: white;
+}
